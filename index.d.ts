@@ -1,6 +1,6 @@
 declare module 'react-native' {
   interface NativeModulesStatic {
-    RNDeubgUrl: {
+    RNDebugUrl: {
       getAddress(): Promise<{ address: string }>;
       setAddress(url: string): void;
     };

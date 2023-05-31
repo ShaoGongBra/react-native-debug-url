@@ -1,11 +1,11 @@
-#import "RNDeubgUrl.h"
+#import "RNDebugUrl.h"
 #import <React/RCTBundleURLProvider.h>
 
-@implementation RNDeubgUrl
+@implementation RNDebugUrl
 
 + (NSString *) getAddress {
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-  NSString *storedString = [defaults stringForKey:@"RNDeubgUrl"];
+  NSString *storedString = [defaults stringForKey:@"RNDebugUrl"];
   if (storedString == nil) {
       storedString = @"";
   }
@@ -35,10 +35,10 @@
 }
 
 + (NSURL *) debugURL {
-  NSString *address = [RNDeubgUrl getAddress];
+  NSString *address = [RNDebugUrl getAddress];
   NSLog(@"存储地址: %@", address);
   NSURL *url = [NSURL URLWithString:[address isEqualToString:@""] ? @"http://192.168.2.22:8081" : address];
-  if([RNDeubgUrl verifyUrl:url]) {
+  if([RNDebugUrl verifyUrl:url]) {
     NSLog(@"存储地址: 验证通过");
     url = [url URLByAppendingPathComponent:@""];
     url = [NSURL URLWithString:@"/index.bundle?platform=ios&dev=true&minify=false" relativeToURL:url];
@@ -48,13 +48,13 @@
   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"];
 }
 
-RCT_EXPORT_MODULE(RNDeubgUrl)
+RCT_EXPORT_MODULE(RNDebugUrl)
 
 RCT_EXPORT_METHOD(getAddress:(RCTPromiseResolveBlock)resolve
                     rejecter:(RCTPromiseRejectBlock)reject)
 {
   resolve(@{
-    @"address": [RNDeubgUrl getAddress]
+    @"address": [RNDebugUrl getAddress]
   });
 }
 
@@ -63,7 +63,7 @@ RCT_EXPORT_METHOD(setAddress:(NSString *)address)
   //创建系统单例 NSUserDefaults的实例对象
    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
   //存值
-  [defaults setObject:address forKey:@"RNDeubgUrl"];
+  [defaults setObject:address forKey:@"RNDebugUrl"];
 }
 
 @end

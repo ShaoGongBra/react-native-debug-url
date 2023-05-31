@@ -1,7 +1,7 @@
 
 #import <React/RCTBridgeModule.h>
 
-@interface RNDeubgUrl : NSObject <RCTBridgeModule>
+@interface RNDebugUrl : NSObject <RCTBridgeModule>
 
 + (NSURL *) debugURL;
 

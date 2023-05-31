@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF3E63092A2731070035092A /* RNDeubgUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3E63082A2731070035092A /* RNDeubgUrl.m */; };
+		AF3E63092A2731070035092A /* RNDebugUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3E63082A2731070035092A /* RNDebugUrl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AF3E63072A2731070035092A /* RNDeubgUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDeubgUrl.h; sourceTree = "<group>"; };
-		AF3E63082A2731070035092A /* RNDeubgUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDeubgUrl.m; sourceTree = "<group>"; };
-		AF3E630C2A2731940035092A /* libRNDeubgUrl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRNDeubgUrl.a; path = "/Volumes/DATA/project/react-native-debug-url/ios/build/Debug-iphoneos/libRNDeubgUrl.a"; sourceTree = "<absolute>"; };
+		AF3E63072A2731070035092A /* RNDebugUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDebugUrl.h; sourceTree = "<group>"; };
+		AF3E63082A2731070035092A /* RNDebugUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDebugUrl.m; sourceTree = "<group>"; };
+		AF3E630C2A2731940035092A /* libRNDebugUrl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRNDebugUrl.a; path = "/Volumes/DATA/project/react-native-debug-url/ios/build/Debug-iphoneos/libRNDebugUrl.a"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +42,17 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				AF3E63072A2731070035092A /* RNDeubgUrl.h */,
-				AF3E63082A2731070035092A /* RNDeubgUrl.m */,
+				AF3E63072A2731070035092A /* RNDebugUrl.h */,
+				AF3E63082A2731070035092A /* RNDebugUrl.m */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* RNDeubgUrl */ = {
+		58B511DA1A9E6C8500147676 /* RNDebugUrl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNDeubgUrl" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNDebugUrl" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -62,9 +62,9 @@
 			);
 			dependencies = (
 			);
-			name = RNDeubgUrl;
+			name = RNDebugUrl;
 			productName = RCTDataManager;
-			productReference = AF3E630C2A2731940035092A /* libRNDeubgUrl.a */;
+			productReference = AF3E630C2A2731940035092A /* libRNDebugUrl.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -81,7 +81,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNDeubgUrl" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNDebugUrl" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -94,7 +94,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* RNDeubgUrl */,
+				58B511DA1A9E6C8500147676 /* RNDebugUrl */,
 			);
 		};
 /* End PBXProject section */
@@ -104,7 +104,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF3E63092A2731070035092A /* RNDeubgUrl.m in Sources */,
+				AF3E63092A2731070035092A /* RNDebugUrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +233,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNDeubgUrl;
+				PRODUCT_NAME = RNDebugUrl;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -249,7 +249,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNDeubgUrl;
+				PRODUCT_NAME = RNDebugUrl;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -257,7 +257,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNDeubgUrl" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNDebugUrl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -266,7 +266,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNDeubgUrl" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNDebugUrl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,

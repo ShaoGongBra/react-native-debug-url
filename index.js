@@ -2,7 +2,7 @@ import { NativeModules, Platform } from 'react-native'
 
 export const getDebugUrl = async () => {
   if (Platform.OS === 'ios') {
-    let { address } = await NativeModules.RNDeubgUrl.getAddress()
+    let { address } = await NativeModules.RNDebugUrl.getAddress()
     address = address.replace('http://', '').replace('https://', '')
     return address
   } else {
@@ -14,9 +14,9 @@ export const getDebugUrl = async () => {
 export const setDebugUrl = url => {
   if (Platform.OS === 'ios') {
     if (!url) {
-      NativeModules.RNDeubgUrl.setAddress('')
+      NativeModules.RNDebugUrl.setAddress('')
     } else {
-      NativeModules.RNDeubgUrl.setAddress(url.startsWith('http') ? url : ('http://' + url))
+      NativeModules.RNDebugUrl.setAddress(url.startsWith('http') ? url : ('http://' + url))
     }
   } else {
     console.error('安卓端暂不支持:setDebugUrl')

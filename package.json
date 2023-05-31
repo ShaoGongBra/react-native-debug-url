@@ -1,6 +1,6 @@
 {
   "name": "react-native-debug-url",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "RN ios调试时支持手动输入调试地址",
   "main": "index.js",
   "scripts": {
